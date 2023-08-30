@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RSA</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="load-content">
+      <div class="loader">
+        <svg viewBox="0 0 80 80">
+          <circle id="test" cx="40" cy="40" r="32"></circle>
+        </svg>
+      </div>
+
+      <div class="loader triangle">
+        <svg viewBox="0 0 86 80">
+          <polygon points="43 8 79 72 7 72"></polygon>
+        </svg>
+      </div>
+
+      <div class="loader">
+        <svg viewBox="0 0 80 80">
+          <rect x="8" y="8" width="64" height="64"></rect>
+        </svg>
+      </div>
+    </div>
+    <div class="content-container">
+      <div class="container">
+        <div class="label">
+          <label for="text" class="input-label">Input Text To Encrypt</label>
+        </div>
+        <input type="text" id="text" class="input-field" />
+        <h1 id="pubKey" class="output"></h1>
+        <h1 id="priKey" class="output"></h1>
+        <h1 id="ciText" class="output"></h1>
+        <div class="label">
+          <label for="decryptText" class="input-label">Decrypt Text</label>
+        </div>
+        <input type="text" id="decryptText" class="input-field" />
+        <div class="label">
+          <label for="privateKey" class="input-label">Private Key</label>
+        </div>
+        <input type="text" id="privateKey" class="input-field" />
+        <button id="btn" class="button">Encrypt</button>
+        <button id="btn2" class="button">Decrypt</button>
+
+        <h1 id="decryptedText" class="output"></h1>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
